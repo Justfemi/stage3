@@ -19,7 +19,9 @@ const Gallery = () => {
           {data.filter((value) => {
             if (searchTerm == "") {
               return value;
-            } else if ()
+            } else if (value.tag.toLowerCase().includes(searchTerm.toLowerCase())) {
+              return value;
+            }
           }).map((value, key) => {
             return (
               <div className='photo-bag' key={value.id}>
