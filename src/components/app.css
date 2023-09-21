@@ -17,7 +17,7 @@ a {
 }
 
 .logout-bag img {
-  width: 30px;
+  width: 40px;
   cursor: pointer;
   transition: all .5s ease-in-out;
 }
@@ -45,39 +45,74 @@ a {
   border: .5px solid brown;
   border-radius: 5px;
   font-size: 17px;
+  background: transparent;
 }
 
 .photo-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-  row-gap: 3rem;
-  column-gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  row-gap: 2.5rem;
+  column-gap: 2.5rem;
   margin-top: 30px;
 }
 
 .photo-container .photo-bag {
-  width: 350px;
-  height: 650px;
+  width: 300px;
+  height: 550px;
   /* border: .5px solid #000; */
 }
 
 .photo-bag .photo {
-  width: 350px;
-  height: 600px;
+  width: 300px;
+  height: 500px;
 }
 
 .photo img {
   width: 100%;
   height: 100%;
+  border-radius: 5px;
   object-fit: cover;
 }
 
 .photo-bag button {
-  background-color: gray;
-  color: #000;
+  background-color: transparent;
+  color: brown;
   font-size: 15px;
-  border: none;
+  border: .5px solid brown;
   border-radius: 5px;
   padding: 5px 10px;
   margin-top: 10px;
 }
+
+@media only screen and (max-width: 750px) {
+  header {
+    padding: 20px;
+  }
+
+  .gallery {
+    padding: 20px auto;
+  }
+
+  .gallery .input-box {
+    width: 90%;
+  }
+}
+
+
+/*
+@media only screen and (max-width: 700px) {
+
+  .gallery {
+    padding: 10px auto;
+  }
+
+  .gallery .input-box {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .photo img {
+    margin: auto auto;
+  }
+} */
