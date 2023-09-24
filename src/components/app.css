@@ -58,13 +58,12 @@ a {
 
 .photo-container .photo-bag {
   width: 300px;
-  height: 550px;
-  /* border: .5px solid #000; */
+  height: 450px;
 }
 
 .photo-bag .photo {
   width: 300px;
-  height: 500px;
+  height: 400px;
 }
 
 .photo img {
@@ -90,7 +89,7 @@ a {
   }
 
   .gallery {
-    padding: 20px auto;
+    padding: 20px;
   }
 
   .gallery .input-box {
@@ -99,20 +98,45 @@ a {
 }
 
 
-/*
 @media only screen and (max-width: 700px) {
-
   .gallery {
-    padding: 10px auto;
+    padding: 20px;
   }
 
   .gallery .input-box {
-    width: 90%;
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 699px) {
+  .photo-container .photo-bag {
+    width: 270px;
+  }
+  
+  .photo-bag .photo {
+    width: 270px;
+  }
+}
+
+
+@media only screen and (max-width: 625px) {
+  .photo-container .photo-bag {
+    width: 95%;
+    margin:0 auto;
+  }
+  
+  .photo-bag .photo {
+    width: 100%;
+    object-fit: contain;
   }
 }
 
 @media only screen and (max-width: 425px) {
-  .photo img {
-    margin: auto auto;
+  .photo-container .photo-bag {
+    width: 90%;
   }
-} */
+  
+  .photo-bag .photo {
+    width: 100%;
+  }
+}
